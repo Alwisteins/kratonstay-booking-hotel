@@ -8,6 +8,7 @@ import Location from "./components/location";
 import Testimoni from "./components/testimoni";
 import Cta from "./components/cta";
 import FAQ from "./components/faq";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimoni />
       <Cta />
       <FAQ />
+      <Footer />
     </div>
   );
 }
