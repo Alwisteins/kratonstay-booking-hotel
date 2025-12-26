@@ -1,6 +1,6 @@
 export default function Cta() {
   return (
-    <div className="bg-green-900 text-white p-12 sm:p-16 space-y-6 flex flex-col items-center">
+    <div className="bg-green-900 text-white px-6 py-12 sm:p-16 space-y-6 flex flex-col items-center text-center">
       <h2 className="text-3xl sm:text-4xl font-bold">
         Special Hotel Deals in <span className="text-yellow-400">Yogyakarta</span>
       </h2>

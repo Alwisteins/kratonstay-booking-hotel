@@ -21,7 +21,7 @@ export default function Footer() {
 
   return (
     <div className="bg-green-900 px-8 py-12 text-white">
-      <div className="grid sm:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
         <div className="space-y-4">
           <h3 className="text-2xl font-bold">
             Kraton<span className="text-yellow-400">Stay</span>

@@ -25,7 +25,7 @@ const Navbar = () => {
         w-full z-50 transition-all duration-300 p-6
         ${
           isSticky
-            ? "fixed top-0 bg-white shadow-md"
+            ? "fixed top-0 bg-white dark:bg-black shadow-md"
             : open
             ? "absolute top-0 bg-white/10 backdrop-blur-xl"
             : "absolute top-0 bg-transparent"
@@ -40,7 +40,9 @@ const Navbar = () => {
           {menus.map((menu) => (
             <NavigationMenu.Item key={menu}>
               <NavigationMenu.Link
-                className={`transition-colors ${isSticky ? "text-gray-700" : "text-white"}`}>
+                className={`transition-colors ${
+                  isSticky ? "text-gray-700 dark:text-gray-300" : "text-white"
+                }`}>
                 {menu}
               </NavigationMenu.Link>
             </NavigationMenu.Item>
@@ -66,7 +68,9 @@ const Navbar = () => {
           {menus.map((menu) => (
             <NavigationMenu.Item key={menu}>
               <NavigationMenu.Link
-                className={`transition-colors ${isSticky ? "text-gray-700" : "text-white"}`}>
+                className={`transition-colors ${
+                  isSticky ? "text-gray-700 dark:text-gray-300" : "text-white"
+                }`}>
                 {menu}
               </NavigationMenu.Link>
             </NavigationMenu.Item>

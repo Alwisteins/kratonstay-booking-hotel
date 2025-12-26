@@ -27,7 +27,7 @@ export default function Stats() {
       {stats.map((stat) => (
         <div
           key={stat.title}
-          className="hover:bg-slate-50 text-center flex flex-col items-center gap-2 p-4 rounded-md">
+          className="hover:bg-slate-50 dark:hover:bg-slate-900 text-center flex flex-col items-center gap-2 p-4 rounded-md">
           {stat.icon}
           <p>{stat.title}</p>
         </div>

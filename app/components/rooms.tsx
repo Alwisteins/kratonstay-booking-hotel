@@ -30,7 +30,7 @@ export default function Rooms() {
   return (
     <div className="p-6 lg:p-12">
       <div className="text-center space-y-2">
-        <h2 className="text-3xl lg:text-4xl text-green-900 font-bold">
+        <h2 className="text-3xl lg:text-4xl text-green-900 dark:text-green-600 font-bold">
           Hotel Room Options in Yogyakarta
         </h2>
         <p>
@@ -38,12 +38,12 @@ export default function Rooms() {
           elegance in mind.
         </p>
       </div>
-      <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {hotels.map((hotel) => (
           <div
             key={hotel.type}
-            className="group flex flex-col w-90 sm:w-80 lg:w-95 h-full rounded-lg transition-transform duration-300 ease-out hover:-translate-y-2 shadow-lg hover:shadow-xl">
-            <div className="relative w-90 h-50 sm:w-80 lg:w-95 lg:h-60 overflow-hidden rounded-t-lg">
+            className="group flex flex-col w-85 sm:w-80 lg:w-95 h-full rounded-lg transition-transform duration-300 ease-out hover:-translate-y-2 shadow-lg hover:shadow-xl">
+            <div className="relative w-85 h-50 sm:w-80 lg:w-95 lg:h-60 overflow-hidden rounded-t-lg">
               <Image
                 alt={hotel.type}
                 src={hotel.image}
@@ -52,12 +52,12 @@ export default function Rooms() {
               />
             </div>
 
-            <div className="flex flex-col flex-1 p-4 lg:p-6 space-y-6 border border-slate-200 bg-gray-50 rounded-b-lg">
-              <h3 className="text-xl font-bold text-green-900">{hotel.type}</h3>
-              <p className="text-sm text-slate-600">{hotel.description}</p>
+            <div className="flex flex-col flex-1 p-4 lg:p-6 space-y-6 border border-slate-200 bg-gray-50 dark:bg-gray-900 dark:border-none rounded-b-lg">
+              <h3 className="text-xl font-bold text-green-900 dark:text-green-600">{hotel.type}</h3>
+              <p className="text-sm text-slate-600 dark:text-slate-200">{hotel.description}</p>
               <ul className="flex flex-wrap gap-2">
                 {hotel.facilities.map((facility) => (
-                  <li key={facility} className="text-xs px-2 py-1 rounded-sm bg-yellow-400">
+                  <li key={facility} className="text-xs px-2 py-1 rounded-sm bg-yellow-400 dark:bg-yellow-600">
                     {facility}
                   </li>
                 ))}

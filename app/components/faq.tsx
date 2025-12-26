@@ -30,13 +30,15 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section className="bg-[#FAFAF7] py-20">
+    <section className="bg-[#FAFAF7] dark:bg-black py-20">
       <div className="mx-auto max-w-3xl px-6 sm:px-4">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-[#1F3D2B] md:text-4xl">
+          <h2 className="text-3xl font-bold text-[#1F3D2B] dark:text-green-600 md:text-4xl">
             Frequently Asked Questions
           </h2>
-          <p className="mt-3 text-gray-600">Common questions about our hotel in Yogyakarta.</p>
+          <p className="mt-3 text-gray-600 dark:text-gray-300">
+            Common questions about our hotel in Yogyakarta.
+          </p>
         </div>
 
         <Accordion.Root type="single" collapsible className="space-y-2">
@@ -46,13 +48,13 @@ export default function FAQ() {
               value={`item-${index}`}
               className="border-b border-gray-200">
               <Accordion.Header>
-                <Accordion.Trigger className="group flex w-full items-center justify-between py-4 text-left text-base font-medium text-[#1F3D2B] transition hover:text-[#14532D]">
+                <Accordion.Trigger className="group flex w-full items-center justify-between py-4 text-left text-base font-medium text-[#1F3D2B] dark:text-green-700 transition hover:text-[#14532D] dark:hover:text-green-600">
                   {item.question}
-                  <ChevronDownIcon className="h-5 w-5 shrink-0 text-gray-500 transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                  <ChevronDownIcon className="h-5 w-5 shrink-0 text-gray-500 dark:text-gray-300 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
               </Accordion.Header>
 
-              <Accordion.Content className="pb-4 text-sm text-gray-600 data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
+              <Accordion.Content className="pb-4 text-sm text-gray-600 dark:text-gray-300 data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
                 {item.answer}
               </Accordion.Content>
             </Accordion.Item>

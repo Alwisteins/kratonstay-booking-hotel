@@ -3,7 +3,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 export default function About() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 p-6 lg:p-12  bg-yellow-50">
+    <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 p-6 lg:p-12  bg-yellow-50 dark:bg-slate-900">
       <Image
         alt="Hotel Image"
         src={"/hero.png"}
@@ -12,7 +12,7 @@ export default function About() {
         className="h-full w-100 lg:w-150 object-cover rounded-xl"
       />
       <div className="space-y-4 lg:space-y-6">
-        <h2 className="text-3xl lg:text-4xl text-green-900 font-bold">
+        <h2 className="text-3xl lg:text-4xl text-green-900 dark:text-green-600 font-bold">
           A Comfortable Hotel in Yogyakarta with a Strategic Location
         </h2>
         <div className="w-1/4 h-1 bg-yellow-400"></div>
