@@ -28,7 +28,7 @@ export default function Rooms() {
     },
   ];
   return (
-    <div className="p-6 lg:p-12">
+    <div className="p-6 lg:p-12" id="rooms">
       <div className="text-center space-y-2">
         <h2 className="text-3xl lg:text-4xl text-green-900 dark:text-green-600 font-bold">
           Hotel Room Options in Yogyakarta

@@ -36,11 +36,12 @@ const Navbar = () => {
           Kraton<span className="text-yellow-400">Stay</span>
         </h1>
 
-        <NavigationMenu.List className="hidden lg:flex gap-6 items-center">
+        <NavigationMenu.List className="hidden z-50 lg:flex gap-6 items-center">
           {menus.map((menu) => (
             <NavigationMenu.Item key={menu}>
               <NavigationMenu.Link
-                className={`transition-colors ${
+                href={`#${menu.toLowerCase()}`}
+                className={`transition-colors cursor-pointer ${
                   isSticky ? "text-gray-700 dark:text-gray-300" : "text-white"
                 }`}>
                 {menu}
@@ -68,7 +69,8 @@ const Navbar = () => {
           {menus.map((menu) => (
             <NavigationMenu.Item key={menu}>
               <NavigationMenu.Link
-                className={`transition-colors ${
+                href={`#${menu.toLowerCase()}`}
+                className={`transition-colors cursor-pointer ${
                   isSticky ? "text-gray-700 dark:text-gray-300" : "text-white"
                 }`}>
                 {menu}

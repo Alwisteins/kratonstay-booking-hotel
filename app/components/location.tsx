@@ -11,7 +11,7 @@ export default function Location() {
   ];
 
   return (
-    <section className="w-full bg-[#FAFAF7] dark:bg-black py-20">
+    <section id="location" className="w-full bg-[#FAFAF7] dark:bg-black py-20">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-green-900 dark:text-green-600 md:text-4xl">

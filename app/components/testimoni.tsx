@@ -23,7 +23,7 @@ export default function Testimoni() {
   ];
 
   return (
-    <section className="w-full bg-yellow-50 dark:bg-slate-900 py-20">
+    <section id='reviews' className="w-full bg-yellow-50 dark:bg-slate-900 py-20">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-green-900 dark:text-green-600 md:text-4xl">

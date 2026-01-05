@@ -33,7 +33,7 @@ export default function Facilities() {
     },
   ];
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-12 text-white bg-green-900 p-6 sm:p-12">
+    <div id='facilities' className="flex flex-col lg:flex-row items-center gap-12 text-white bg-green-900 p-6 sm:p-12">
       <div className="lg:w-1/2 space-y-6">
         <h2 className="text-3xl lg:text-4xl font-bold">
           Facilities for a Comfortable Stay in Yogyakarta
